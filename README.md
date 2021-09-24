@@ -1,5 +1,5 @@
 # Freesurfer
-Learing notes of how to use freesurfer to analyze structural data
+Learning notes of how to use freesurfer to analyze structural data
 1. organize the data into one folder
 2. execute preprocessing shell script
   
