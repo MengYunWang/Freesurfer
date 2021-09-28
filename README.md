@@ -1,6 +1,7 @@
 # Freesurfer
 Learning notes of how to use freesurfer to analyze structural data
 ## 1. Organize the data into one folder
+- See example _T1\_organize.shell_
 ## 2. Execute preprocessing shell script
   
    ### 2.1 recon-all with parallell processing
