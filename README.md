@@ -12,8 +12,11 @@ Learning notes of how to use freesurfer to analyze structural data
    - creat Contrast file (.mtx) under Contrasts
 ## 3. Execute postprocessing shell script
 
-   ### 3.1 concatnating all subfiles into one big file with ***mris_preproc***
+   ### 3.1 Concatnating all subfiles into one big file 
+   with ***mris_preproc***
   
-   ### 3.2 fitting the general linear model with ***mri_glmfit***
+   ### 3.2 Fitting the general linear model 
+   with ***mri_glmfit***
   
-   ### 3.3 cluster correction with ***mri_glmfit-sim***
+   ### 3.3 Cluster correction 
+   with ***mri_glmfit-sim***
