@@ -19,7 +19,7 @@ export SUBJECTS_DIR=/Users/wang/Desktop/BBSC/Functional/anat/sub-1
 source $FREESURFER_HOME/SetUpFreeSurfer.sh
 
 # run the main commandline
-cd SUBJECTS_DIR
+cd $SUBJECTS_DIR
 
 ls *.nii | parallel --jobs 8 recon-all \  #parallel processing the data using 8 cores
                                  -i {} \  #files need to be processed
