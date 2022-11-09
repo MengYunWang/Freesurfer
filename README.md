@@ -27,7 +27,7 @@ Learning notes of how to use freesurfer to analyze structural data
    
 ## 4. Folders meaning
 
-## 5. MNI2surf
+## 5. converstion between MNI space and surface space
 ### 5.1 freesurf (Affine and MNIsurf)
 
 ***mri_vol2surf***  ***mri_surf2surf***
