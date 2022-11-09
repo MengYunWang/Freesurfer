@@ -24,3 +24,22 @@ Learning notes of how to use freesurfer to analyze structural data
   
    ### 3.3 Cluster correction 
    with ***mri_glmfit-sim***
+   
+## 4. Folders meaning
+
+## 5. MNI2surf
+### 5.1 freesurf (Affine and MNIsurf)
+
+***mri_vol2surf***  ***mri_surf2surf***
+
+### 5.2 Registration fusion (RF-M3Z and RF-ANTs)
+https://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/registration/Wu2017_RegistrationFusion
+
+Wu J, Ngo GH, Greve DN, Li J, He T, Fischl B, Eickhoff SB, Yeo BTT. Accurate nonlinear mapping between MNI volumetric and FreeSurfer surface coordinate systems, Human Brain Mapping 39:3793–3808, 2018.
+
+**The aforementioned two methods can only convert the data from the MNI to fsavrage, and within fsavrage, but can not project into fsLR format.**
+
+### 5.3 neuromap
+Markello, RD, Hansen, JY, Liu, ZQ, Bazinet, V, Shafiei, G, Suarez, LE, Blostein, N, Seidlitz, J, Baillet, S, Satterthwaite, TD, Chakravarty, MM, Raznahan, A, Misic, B. (2022). neuromaps: structural and functional interpretation of brain maps. Nature Methods. doi:10.1038/s41592-022-01625-w
+
+https://netneurolab.github.io/neuromaps/user_guide/atlases.html
