@@ -30,7 +30,8 @@ Learning notes of how to use freesurfer to analyze structural data
 ## 5. converstion between MNI space and surface space
 ### 5.1 freesurf (Affine and MNIsurf)
 
-***mri_vol2surf***  ***mri_surf2surf***
+***mri_vol2surf***   ***mri_surf2vol*** ***mri_surf2surf***
+https://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/registration/Wu2017_RegistrationFusion/freesurfer_baseline/utilities
 
 ### 5.2 Registration fusion (RF-M3Z and RF-ANTs)
 https://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/registration/Wu2017_RegistrationFusion
