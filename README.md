@@ -33,29 +33,29 @@ Video [Part I](https://www.youtube.com/watch?v=8Ict0Erh7_c)    [Part II](https:/
 ? was often used to represent left or right
 ### label:
 It includes labels of several brain atlas, such as 
-
+```
 ?h.apar.DKTatlas.annot  >>> Desikan-Killiany atlas
 
 ?h.aparc.a2009s.annot >>> Destrieax atlas
-
+```
 ### MRI:
 compasses all the volume data
-
+```
 raw_avg.mgz >>> the raw volume data in raw space resolution
 
 others >>> in the normalized space
-
+```
 ### scripts:
 it contains the scripts or logs when it goes through processing
-
+```
 recon-all.log  >>> the log file you can go through if there is something wrong
-
+```
 ### stats:
 contains the statistics of the brain, such as the thickness or volume of different brain regions.
 
 ### surf:
 includes all the surface files
-
+```
 ?h.orig & ?h.white >>> the boundary between the white matter and the grey matter
 
 ?h.pial >>> the boundary between the grey matter and the pia matter
@@ -63,7 +63,7 @@ includes all the surface files
 ?h.inflated >>> inflated brain 
 
 ?h.thickness or ?h.volume >>> values of the thickness or volume projected onto the inflated brain
-
+```
 ## 5. conversation between MNI space and surface space
 ### 5.1 freesurf (Affine and MNIsurf)
 
