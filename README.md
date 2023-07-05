@@ -31,7 +31,7 @@ Learning notes on how to use freesurfer to analyze structural data
 Video [Part I](https://www.youtube.com/watch?v=8Ict0Erh7_c)    [Part II](https://www.youtube.com/watch?v=KncPouQWAp0) 
 
 ? was often used to represent left or right
-### label
+### label:
 It includes labels of several brain atlas, such as 
 
 ?h.apar.DKTatlas.annot  >>> Desikan-Killiany atlas
