@@ -79,7 +79,7 @@ from native > native surface> fsaverage > fsLR
 
 ***?.sphere.reg*** is the registration file from native surface to fsaverage
 
-https://osf.io/k89fh/wiki/Surface/
+[How to project from native to fsaverage and to fsLR](https://osf.io/k89fh/wiki/Surface/)
 
 [toolbox](https://github.com/DiedrichsenLab/surfAnalysis/tree/master) based on matlab
 
