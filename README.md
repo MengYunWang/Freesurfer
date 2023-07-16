@@ -75,7 +75,7 @@ Surface >> fsaverage (fs3>1k; fs4>3k; fs5>10k; fs6>41k; fs7>164k); per hemispher
 ```
 ### 5.1 Projection between native volume, native/fsaverage surface, and fsLR space
 
-[from native > native surface> fsaverage > fsLR](https://github.com/MengYunWang/Freesurfer/blob/main/Resampling-FreeSurfer-HCP_5_8.pdf)(This is recommended procedure) 
+[from native > native surface> fsaverage > fsLR](https://github.com/MengYunWang/Freesurfer/blob/main/Resampling-FreeSurfer-HCP_5_8.pdf) (This is the recommended procedure) 
 
 ***?.sphere.reg*** is the registration file from native surface to fsaverage
 
