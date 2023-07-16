@@ -64,20 +64,40 @@ includes all the surface files
 
 ?h.thickness or ?h.volume >>> values of the thickness or volume projected onto the inflated brain
 ```
-## 5. conversation between MNI space and surface space
-### 5.1 freesurf (Affine and MNIsurf)
+## 5. Projection between volume space and surface space
+Native space: individual volume and surface (generated from freesurfer)
 
-***mri_vol2surf***   ***mri_surf2vol*** ***mri_surf2surf***
-https://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/registration/Wu2017_RegistrationFusion/freesurfer_baseline/utilities
+Standard space: [MNI space](https://www.lead-dbs.org/about-the-mni-spaces/);  fsLR file formate [CIFTI](https://balsa.wustl.edu/about/fileTypes)
+```
+volume >> MNI space (MNI152NLin2009cAsym-fMRIprep; MNI152NLin6Asym-FSL);
+Surface >> fsaverage (fs3>1k; fs4>3k; fs5>10k; fs6>41k; fs7>164k); per hemisphere
+           fsLR (fsLR32k; fsLR164k) per hemisphere 
+```
+### 5.1 Projection between native volume, native/fsaverage surface, and fsLR space
 
-### 5.2 Registration fusion (RF-M3Z and RF-ANTs)
-https://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/registration/Wu2017_RegistrationFusion
+from native > native surface> fsaverage > fsLR 
+
+***?.sphere.reg*** is the registration file from native surface to fsaverage
+
+https://osf.io/k89fh/wiki/Surface/
+
+[toolbox](https://github.com/DiedrichsenLab/surfAnalysis/tree/master) based on matlab
+
+### 5.2 Projection between MNI volume and fsaverage surface
+
+#### 5.2.1 freesurf ([Affine and MNIsurf](https://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/registration/Wu2017_RegistrationFusion/freesurfer_baseline/utilities))
+```
+mri_vol2surf
+mri_surf2vol
+mri_surf2surf
+```
+#### 5.2.2 [Registration fusion](https://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/registration/Wu2017_RegistrationFusion) (RF-M3Z and RF-ANTs) 
 
 Wu J, Ngo GH, Greve DN, Li J, He T, Fischl B, Eickhoff SB, Yeo BTT. Accurate nonlinear mapping between MNI volumetric and FreeSurfer surface coordinate systems, Human Brain Mapping 39:3793–3808, 2018.
 
 **The two methods mentioned above can only convert the data from the MNI to fsaverage, and within fsaverage, but can not project into fsLR format.**
 
-### 5.3 neuromap
+#### 5.2.3 neuromap
 Markello, RD, Hansen, JY, Liu, ZQ, Bazinet, V, Shafiei, G, Suarez, LE, Blostein, N, Seidlitz, J, Baillet, S, Satterthwaite, TD, Chakravarty, MM, Raznahan, A, Misic, B. (2022). neuromaps: structural and functional interpretation of brain maps. Nature Methods. doi:10.1038/s41592-022-01625-w
 
 https://netneurolab.github.io/neuromaps/user_guide/atlases.html
