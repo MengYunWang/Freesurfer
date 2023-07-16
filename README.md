@@ -67,7 +67,7 @@ includes all the surface files
 ## 5. Projection between volume space and surface space
 Native space: individual volume and surface (generated from freesurfer)
 
-Standard space: [MNI space](https://www.lead-dbs.org/about-the-mni-spaces/);  fsLR file formate [CIFTI](https://balsa.wustl.edu/about/fileTypes)
+Standard space: [MNI space](https://www.lead-dbs.org/about-the-mni-spaces/); [fsaverage](https://brainder.org/2016/05/31/downsampling-decimating-a-brain-surface/); fsLR file formate [CIFTI](https://balsa.wustl.edu/about/fileTypes)
 ```
 volume >> MNI space (MNI152NLin2009cAsym-fMRIprep; MNI152NLin6Asym-FSL);
 Surface >> fsaverage (fs3>1k; fs4>3k; fs5>10k; fs6>41k; fs7>164k); per hemisphere
@@ -87,9 +87,9 @@ from native > native surface> fsaverage > fsLR
 
 #### 5.2.1 freesurf ([Affine and MNIsurf](https://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/registration/Wu2017_RegistrationFusion/freesurfer_baseline/utilities))
 ```
-mri_vol2surf
-mri_surf2vol
-mri_surf2surf
+mri_vol2surf >> from volume data to surface data
+mri_surf2vol >> from surface data to volume data
+mri_surf2surf >> from surface to surface, standardize or downsample or upsample (i.e. native to fs; fs to fs5)
 ```
 #### 5.2.2 [Registration fusion](https://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/registration/Wu2017_RegistrationFusion) (RF-M3Z and RF-ANTs) 
 
