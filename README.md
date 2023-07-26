@@ -34,21 +34,21 @@ Video [Part I](https://www.youtube.com/watch?v=8Ict0Erh7_c)    [Part II](https:/
 ### label:
 It includes labels of several brain atlas, such as 
 ```
-?h.apar.DKTatlas.annot  >>> Desikan-Killiany atlas
+  ?h.apar.DKTatlas.annot  >>> Desikan-Killiany atlas
 
-?h.aparc.a2009s.annot >>> Destrieax atlas
+  ?h.aparc.a2009s.annot >>> Destrieax atlas
 ```
 ### MRI:
 compasses all the volume data
 ```
-raw_avg.mgz >>> the raw volume data in raw space resolution
+  raw_avg.mgz >>> the raw volume data in raw space resolution
 
-others >>> in the normalized space
+  others >>> in the normalized space
 ```
 ### scripts:
 it contains the scripts or logs when it goes through processing
 ```
-recon-all.log  >>> the log file you can go through if there is something wrong
+  recon-all.log  >>> the log file you can go through if there is something wrong
 ```
 ### stats:
 contains the statistics of the brain, such as the thickness or volume of different brain regions.
@@ -56,28 +56,29 @@ contains the statistics of the brain, such as the thickness or volume of differe
 ### surf:
 includes all the surface files
 ```
-?h.orig & ?h.white >>> the boundary between the white matter and the grey matter
+  ?h.orig & ?h.white >>> the boundary between the white matter and the grey matter
 
-?h.pial >>> the boundary between the grey matter and the pia matter
+  ?h.pial >>> the boundary between the grey matter and the pia matter
 
-?h.inflated >>> inflated brain 
+  ?h.inflated >>> inflated brain 
 
-?h.thickness or ?h.volume >>> values of the thickness or volume projected onto the inflated brain
+  ?h.thickness or ?h.volume >>> values of the thickness or volume projected onto the inflated brain
 ```
 ## 5. Projection between volume space and surface space
-Native space: individual volume and surface (generated from freesurfer)
-
-Standard space: [MNI space](https://www.lead-dbs.org/about-the-mni-spaces/); [fsaverage](https://brainder.org/2016/05/31/downsampling-decimating-a-brain-surface/); fsLR file formate [CIFTI](https://balsa.wustl.edu/about/fileTypes)
+Volume space: native volume and [MNI space](https://www.lead-dbs.org/about-the-mni-spaces/);
 ```
-volume >> MNI space (MNI152NLin2009cAsym-fMRIprep; MNI152NLin6Asym-FSL);
-Surface >> fsaverage (fs3>>1k; fs4>>3k; fs5>>10k; fs6>>41k; fs7>>164k); per hemisphere
-           fsLR (fsLR32k; fsLR164k) per hemisphere 
+  MNI space (MNI152NLin2009cAsym-fMRIprep; MNI152NLin6Asym-FSL);
+```
+Surface space: native surface (generated from freesurfer) and standard surfaces ([fsaverage](https://brainder.org/2016/05/31/downsampling-decimating-a-brain-surface/); fsLR file formate [CIFTI](https://balsa.wustl.edu/about/fileTypes))
+```
+  fsaverage (fs3>>1k; fs4>>3k; fs5>>10k; fs6>>41k; fs7>>164k); per hemisphere
+  fsLR (fsLR32k; fsLR164k) per hemisphere 
 ```
 ### 5.1 Projection native volume >> native/fsaverage surface, or fsLR surface
 
-[from native > native surface> fsaverage > fsLR](https://github.com/MengYunWang/Freesurfer/blob/main/Resampling-FreeSurfer-HCP_5_8.pdf) (This is the recommended procedure) 
+[from native > native surface> fsaverage > fsLR](https://github.com/MengYunWang/Freesurfer/blob/main/Resampling-FreeSurfer-HCP_5_8.pdf) (This is the recommended procedure to project to fsLR space) 
 
-***?.sphere.reg*** is the registration file from native surface to fsaverage
+***?.sphere.reg is the registration file from native surface to fsaverage***
 
 [How to project from native to fsaverage and to fsLR](https://osf.io/k89fh/wiki/Surface/)
 
