@@ -74,7 +74,7 @@ Surface space: native surface (generated from freesurfer) and standard surfaces 
   fsaverage (fs3>>1k; fs4>>3k; fs5>>10k; fs6>>41k; fs7>>164k); per hemisphere
   fsLR (fsLR32k; fsLR164k) per hemisphere 
 ```
-### 5.1 Projection native volume >> native/fsaverage surface, or fsLR surface
+### 5.1 Project native volume >> native/fsaverage surface, or fsLR surface
 
 [from native > native surface> fsaverage > fsLR](https://github.com/MengYunWang/Freesurfer/blob/main/Resampling-FreeSurfer-HCP_5_8.pdf) (This is the recommended procedure to project to fsLR space) 
 
@@ -84,7 +84,7 @@ Surface space: native surface (generated from freesurfer) and standard surfaces 
 
 [toolbox](https://github.com/DiedrichsenLab/surfAnalysis/tree/master) based on matlab
 
-### 5.2 Projection MNI volume >> fsaverage surface
+### 5.2 Project MNI volume >> fsaverage surface
 
 #### 5.2.1 freesurf ([Affine and MNIsurf](https://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/registration/Wu2017_RegistrationFusion/freesurfer_baseline/utilities))
 ```
