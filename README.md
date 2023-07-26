@@ -98,7 +98,7 @@ Wu J, Ngo GH, Greve DN, Li J, He T, Fischl B, Eickhoff SB, Yeo BTT. Accurate non
 
 **The two methods mentioned above can only convert the data from the MNI to fsaverage, and within fsaverage, but can not project into fsLR format.**
 
-## 6. Project atlas or parcellation or annotation between volume, fsaverage, and fsLR  ------  neuromap
+### 5.3 Project atlas or parcellation or annotation between volume, fsaverage, and fsLR  ------  neuromap
 Markello, RD, Hansen, JY, Liu, ZQ, Bazinet, V, Shafiei, G, Suarez, LE, Blostein, N, Seidlitz, J, Baillet, S, Satterthwaite, TD, Chakravarty, MM, Raznahan, A, Misic, B. (2022). neuromaps: structural and functional interpretation of brain maps. Nature Methods. doi:10.1038/s41592-022-01625-w
 
 https://netneurolab.github.io/neuromaps/user_guide/atlases.html
