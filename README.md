@@ -70,7 +70,7 @@ Native space: individual volume and surface (generated from freesurfer)
 Standard space: [MNI space](https://www.lead-dbs.org/about-the-mni-spaces/); [fsaverage](https://brainder.org/2016/05/31/downsampling-decimating-a-brain-surface/); fsLR file formate [CIFTI](https://balsa.wustl.edu/about/fileTypes)
 ```
 volume >> MNI space (MNI152NLin2009cAsym-fMRIprep; MNI152NLin6Asym-FSL);
-Surface >> fsaverage (fs3>1k; fs4>3k; fs5>10k; fs6>41k; fs7>164k); per hemisphere
+Surface >> fsaverage (fs3>>1k; fs4>>3k; fs5>>10k; fs6>>41k; fs7>>164k); per hemisphere
            fsLR (fsLR32k; fsLR164k) per hemisphere 
 ```
 ### 5.1 Projection between native volume, native/fsaverage surface, and fsLR space
