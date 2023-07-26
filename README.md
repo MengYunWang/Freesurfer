@@ -73,7 +73,7 @@ volume >> MNI space (MNI152NLin2009cAsym-fMRIprep; MNI152NLin6Asym-FSL);
 Surface >> fsaverage (fs3>>1k; fs4>>3k; fs5>>10k; fs6>>41k; fs7>>164k); per hemisphere
            fsLR (fsLR32k; fsLR164k) per hemisphere 
 ```
-### 5.1 Projection between native volume, native/fsaverage surface, and fsLR space
+### 5.1 Projection native volume, >> native/fsaverage surface, or fsLR surface
 
 [from native > native surface> fsaverage > fsLR](https://github.com/MengYunWang/Freesurfer/blob/main/Resampling-FreeSurfer-HCP_5_8.pdf) (This is the recommended procedure) 
 
@@ -83,7 +83,7 @@ Surface >> fsaverage (fs3>>1k; fs4>>3k; fs5>>10k; fs6>>41k; fs7>>164k); per hemi
 
 [toolbox](https://github.com/DiedrichsenLab/surfAnalysis/tree/master) based on matlab
 
-### 5.2 Projection between MNI volume and fsaverage surface
+### 5.2 Projection MNI volume >> fsaverage surface
 
 #### 5.2.1 freesurf ([Affine and MNIsurf](https://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/registration/Wu2017_RegistrationFusion/freesurfer_baseline/utilities))
 ```
